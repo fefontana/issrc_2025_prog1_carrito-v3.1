@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nombre": "Filtro de aceite",
+    "precio": 3500,
+    "stock": 8,
+    "imagen": "./assets/filtro.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Bujía NGK",
+    "precio": 4200,
+    "stock": 12,
+    "imagen": "./assets/bujia.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Pastilla de freno",
+    "precio": 9600,
+    "stock": 6,
+    "imagen": "./assets/pastilla.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Aceite 10W40",
+    "precio": 14500,
+    "stock": 10,
+    "imagen": "./assets/aceite.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Correa dentada",
+    "precio": 8900,
+    "stock": 4,
+    "imagen": "./assets/correa.png"
+  }
+]

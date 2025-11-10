@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carrito v4.2 - Entrega</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1 class="site-title">🛠️ Repuestos Online - Carrito v3.2</h1>
+        <p class="site-desc">Tienda de repuestos: agregá productos, administrá stock y visualizá tu carrito.</p>
+      </div>
+      <div class="ident">
+        <p>Profesor: Carlos Gonzalez / Javier Bozzo </p>
+        <p>Estudiante: Fernando Fontana</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section id="productos-container" class="productos-section" aria-labelledby="prod-title">
+      <h2 id="prod-title">Productos disponibles</h2>
+      <div id="productos-list" class="productos-list" role="list"></div>
+    </section>
+
+    <aside id="carrito-container" class="carrito-aside" aria-labelledby="cart-title">
+      <h2 id="cart-title">Carrito</h2>
+      <div id="carrito-list" class="carrito-list" role="list"></div>
+      <p id="total" class="total">Total: $0</p>
+      <div class="cart-actions">
+        <button id="vaciar-carrito" class="btn secondary">Vaciar carrito</button>
+        <button id="checkout" class="btn primary">Pagar</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Entrega Carrito HTML-pureJS-CSS-JSON v3.1 - Programacion Web 1 · Fernando Fontana</small>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

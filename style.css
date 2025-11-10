@@ -1,0 +1,66 @@
+/* Variables y reset ligero */
+:root{
+  --bg:#f6f7f9;
+  --card:#ffffff;
+  --accent:#0d47a1;
+  --accent-2:#f57c00;
+  --text:#222;
+  --muted:#6b7280;
+  --radius:10px;
+  --gap:1rem;
+  --shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+*{box-sizing:border-box}
+body{font-family: 'Roboto', sans-serif; margin:0; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+.container{max-width:1100px; margin:0 auto; padding:1rem}
+
+/* Header */
+.site-header{background:linear-gradient(90deg,rgba(13,71,161,0.95), rgba(13,71,161,0.85)); color:white}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem}
+.site-title{margin:0; font-weight:700}
+.site-desc{margin:0.25rem 0 0; color:rgba(255,255,255,0.9)}
+
+/* Main layout - Flexbox */
+.main-grid{display:flex; gap:var(--gap); align-items:flex-start; padding:1.25rem}
+.productos-section{flex:2}
+.carrito-aside{flex:1; position:sticky; top:1rem; align-self:flex-start}
+
+/* Cards */
+.producto, .carrito-item{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:0.75rem;
+  margin-bottom:0.75rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:var(--shadow);
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* Producto interno */
+.prod-left{display:flex; gap:0.75rem; align-items:center}
+.producto-img{width:64px; height:64px; border-radius:6px; object-fit:cover; background:#eee; display:block}
+.prod-info{min-width:0}
+.prod-name{display:block; font-weight:600}
+.prod-price{color:var(--muted); font-size:0.95rem}
+
+/* Botones */
+.btn{border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600}
+.btn.primary{background:var(--accent); color:white}
+.btn.secondary{background:transparent; border:1px solid rgba(0,0,0,0.08); color:var(--text)}
+.btn:active{transform:translateY(1px)}
+
+/* Carrito */
+.cart-actions{display:flex; gap:0.5rem; margin-top:0.5rem}
+.total{font-weight:700; margin-top:0.5rem}
+
+/* Responsive */
+@media (max-width:900px){
+  .main-grid{flex-direction:column}
+  .carrito-aside{position:relative; top:auto}
+}
+
+/* Utility */
+.small{font-size:0.9rem; color:var(--muted)}
